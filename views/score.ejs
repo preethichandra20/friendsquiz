@@ -1,0 +1,20 @@
+
+<%- include("partials/header.ejs") -%>
+    <div class="heading">
+        <img src="images/iknow.jpg" style="height: 200px;">
+    </div>
+    <div class="box1" style="margin-top:5%">
+            <h2 style="font-size:60px; text-align: center;"><%= name %>'s score</h2>
+            <h2 style="font-size:60px;text-align: center;" >
+                <%= score %> out of 20
+            </h2>
+            <% if(score<20){%>
+                <form action="/score" method="post">
+                    <button type="submit" class="btn btn-danger" style="margin-left:30%;width:400px;font-size:30px">Retry the quiz?</button>
+                    </form>
+            <% }else{%>
+                <h2 style="text-align: center;font-size:30px">Congratulations, you got all correct</h2>
+            <%}%>
+        
+    </div>
+    <%- include("partials/footer.ejs") -%>

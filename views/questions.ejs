@@ -1,0 +1,29 @@
+<%- include("partials/header.ejs") -%>
+<div class="heading">
+    <img src="images/friends.jpg" style="width:65%;">
+</div>
+<div class="box1">
+    <form action="/questions" method="post">
+        <ol>
+            <% for(var i=0;i<questions.length;i++){ %>
+                <div>
+                    <li> 
+                        <%= questions[i].question %>
+                        <br>
+                    <label><input type="radio" name="<%= questions[i].question %>" value="<%= questions[i].option1 %>" > <%= questions[i].option1 %> </label>
+                    <br>
+                    <label><input type="radio" name="<%= questions[i].question %>" value="<%= questions[i].option2 %>" > <%= questions[i].option2 %>  </label>
+                    <br>
+                    <label><input type="radio" name="<%= questions[i].question %>" value="<%= questions[i].option3 %>" > <%= questions[i].option3 %> </label>
+                    </li>
+                </div>
+            <% } %>
+            </ol>
+            <button type="submit" class="btn btn-success" style="margin-left:30%; width:400px;font-size:30px">Submit Quiz</button>
+        </form>
+</div>
+    
+
+    <%- include("partials/footer.ejs") -%>
+
+   
