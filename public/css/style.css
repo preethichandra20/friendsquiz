@@ -1,28 +1,39 @@
+html,body{
+    height: 100%;
+    margin: 0;
+}
 body{
-    background-image: url("/images/friends3.jpg");
+    font-family: Comic Sans MS, Comic Sans, cursive;
 }
-label{
-    display: block;
+.body1{
+  background-image:url("https://i.pinimg.com/originals/fc/55/ea/fc55ea76c509a162ff972305546bcad7.jpg");
+  background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size:contain;
+    background-position:center;
+    background-color:#b3a4db;
+    height:100%;
 }
-.heading{
-    margin-left:25%;
+.body2{
+    background-color:#b3a4db;
+    font-size:20px;
+   background-image:url("https://www.fonewalls.com/wp-content/uploads/Starry-Sky-Mountains-Stars-Night-Wallpaper-1080x1920.jpg");
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size:cover;
+    background-position:center;
+    background-color:#b3a4db;
+    height:100%;
 }
-.box1{
-    max-width:1000px;
-    margin:30px auto;
-    background:white;
-    border:10px solid cyan;
-    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
-    font-size:35px; 
-    padding:15px;
+.body2 .card{
+    width:30rem;
 }
-.btn btn-primary{
-    margin-left:20%;
+.body2 .card ul{
+padding: 0;
+margin: 0;
+text-align:left;
 }
-::placeholder{
-    font-size:30px;
+h3{
+    color:purple;
 }
-h2{
-    color:crimson;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
+

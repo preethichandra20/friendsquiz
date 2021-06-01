@@ -7,11 +7,10 @@ const PORT = process.env.PORT || 3000;
 app.use(bodyParser.urlencoded({extended:true}));
 app.set('view engine','ejs');
 app.use(express.static("public"));
-
+var userName;
 const answers=["Kiwi","Muriel","Soldier","Rome","Bonnie","Moondance Diner","Orthodontist","Eddie","Pyramid",
 "Charles Bing","Montauk","Sesame Street","Burbank","Monica","Erika","Chick","The One With The Baby Shower","72","The Shining","Nova Scotia"];
 var score=0;
-var userName="";
 const questions=[
     {
         question:"Ross is allergic to which one among the following?",
